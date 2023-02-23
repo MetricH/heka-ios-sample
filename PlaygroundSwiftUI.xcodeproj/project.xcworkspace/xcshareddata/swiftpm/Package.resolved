@@ -15,7 +15,7 @@
       "location" : "https://github.com/HekaHealth/heka-swift-package",
       "state" : {
         "branch" : "main",
-        "revision" : "a1f7c3ba8d6736224dbab74ca4546e59a3a5bc12"
+        "revision" : "9b6ab5478990ea9e0e00a2960c080b2d19e284db"
       }
     },
     {
@@ -25,15 +25,6 @@
       "state" : {
         "revision" : "065a93d0077d54710c03e9d738e4d3998615fe82",
         "version" : "6.20.0"
-      }
-    },
-    {
-      "identity" : "swiftyjson",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SwiftyJSON/SwiftyJSON.git",
-      "state" : {
-        "revision" : "b3dcd7dbd0d488e1a7077cb33b00f2083e382f07",
-        "version" : "5.0.1"
       }
     }
   ],
