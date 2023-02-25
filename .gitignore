@@ -1,0 +1,8 @@
+# ios related ignore patterns
+Pods/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+*.xcuserdatad
+
+.DS_Store

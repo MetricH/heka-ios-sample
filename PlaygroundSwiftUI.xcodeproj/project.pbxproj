@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C8E3FC0027B5E58DEA7D05A /* Pods_PlaygroundSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46047D2C3B1937E60F897E5F /* Pods_PlaygroundSwiftUI.framework */; };
 		B6D563AF298EC8740001B0D5 /* PlaygroundSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D563AE298EC8740001B0D5 /* PlaygroundSwiftUIApp.swift */; };
 		B6D563B1298EC8740001B0D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D563B0298EC8740001B0D5 /* ContentView.swift */; };
 		B6D563B3298EC8750001B0D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D563B2298EC8750001B0D5 /* Assets.xcassets */; };
 		B6D563B6298EC8750001B0D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D563B5298EC8750001B0D5 /* Preview Assets.xcassets */; };
-		B6D563BE298EC8EE0001B0D5 /* heka in Frameworks */ = {isa = PBXBuildFile; productRef = B6D563BD298EC8EE0001B0D5 /* heka */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46047D2C3B1937E60F897E5F /* Pods_PlaygroundSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaygroundSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65372655720A7C7D09FC5B0C /* Pods-PlaygroundSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaygroundSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-PlaygroundSwiftUI/Pods-PlaygroundSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		B6D563AB298EC8740001B0D5 /* PlaygroundSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaygroundSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D563AE298EC8740001B0D5 /* PlaygroundSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundSwiftUIApp.swift; sourceTree = "<group>"; };
 		B6D563B0298EC8740001B0D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,6 +24,7 @@
 		B6D563B5298EC8750001B0D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B6D563BF298ED47D0001B0D5 /* PlaygroundSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PlaygroundSwiftUI.entitlements; sourceTree = "<group>"; };
 		B6D563C0298ED5D10001B0D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E7FA89CD06AF6EAF1D44F68A /* Pods-PlaygroundSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaygroundSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-PlaygroundSwiftUI/Pods-PlaygroundSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,18 +32,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6D563BE298EC8EE0001B0D5 /* heka in Frameworks */,
+				1C8E3FC0027B5E58DEA7D05A /* Pods_PlaygroundSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94B9383FB548B728414AAE98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46047D2C3B1937E60F897E5F /* Pods_PlaygroundSwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B6D563A2298EC8740001B0D5 = {
 			isa = PBXGroup;
 			children = (
 				B6D563AD298EC8740001B0D5 /* PlaygroundSwiftUI */,
 				B6D563AC298EC8740001B0D5 /* Products */,
+				F77E5FC7C21BEC641727C582 /* Pods */,
+				94B9383FB548B728414AAE98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +86,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F77E5FC7C21BEC641727C582 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7FA89CD06AF6EAF1D44F68A /* Pods-PlaygroundSwiftUI.debug.xcconfig */,
+				65372655720A7C7D09FC5B0C /* Pods-PlaygroundSwiftUI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,18 +103,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6D563B9298EC8750001B0D5 /* Build configuration list for PBXNativeTarget "PlaygroundSwiftUI" */;
 			buildPhases = (
+				26566CF2A61D35BCDEBED37C /* [CP] Check Pods Manifest.lock */,
 				B6D563A7298EC8740001B0D5 /* Sources */,
 				B6D563A8298EC8740001B0D5 /* Frameworks */,
 				B6D563A9298EC8740001B0D5 /* Resources */,
+				2A7DA03969C00C4D871CB447 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = PlaygroundSwiftUI;
-			packageProductDependencies = (
-				B6D563BD298EC8EE0001B0D5 /* heka */,
-			);
 			productName = PlaygroundSwiftUI;
 			productReference = B6D563AB298EC8740001B0D5 /* PlaygroundSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -120,9 +142,6 @@
 				Base,
 			);
 			mainGroup = B6D563A2298EC8740001B0D5;
-			packageReferences = (
-				B6D563BC298EC8EE0001B0D5 /* XCRemoteSwiftPackageReference "heka-swift-package" */,
-			);
 			productRefGroup = B6D563AC298EC8740001B0D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26566CF2A61D35BCDEBED37C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlaygroundSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A7DA03969C00C4D871CB447 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlaygroundSwiftUI/Pods-PlaygroundSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlaygroundSwiftUI/Pods-PlaygroundSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlaygroundSwiftUI/Pods-PlaygroundSwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B6D563A7298EC8740001B0D5 /* Sources */ = {
@@ -273,6 +334,7 @@
 		};
 		B6D563BA298EC8750001B0D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7FA89CD06AF6EAF1D44F68A /* Pods-PlaygroundSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -281,7 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PlaygroundSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = Q69Q3363R9;
+				DEVELOPMENT_TEAM = 8BZ7LG34VV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlaygroundSwiftUI/Info.plist;
@@ -310,6 +372,7 @@
 		};
 		B6D563BB298EC8750001B0D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65372655720A7C7D09FC5B0C /* Pods-PlaygroundSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,7 +381,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PlaygroundSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = Q69Q3363R9;
+				DEVELOPMENT_TEAM = 8BZ7LG34VV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlaygroundSwiftUI/Info.plist;
@@ -367,25 +430,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		B6D563BC298EC8EE0001B0D5 /* XCRemoteSwiftPackageReference "heka-swift-package" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/HekaHealth/heka-swift-package";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B6D563BD298EC8EE0001B0D5 /* heka */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B6D563BC298EC8EE0001B0D5 /* XCRemoteSwiftPackageReference "heka-swift-package" */;
-			productName = heka;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B6D563A3298EC8740001B0D5 /* Project object */;
 }
