@@ -1,8 +1,12 @@
 PODS:
   - Alamofire (5.6.4)
-  - heka (0.0.5):
+  - HekaCore (0.0.8):
     - Alamofire (~> 5.6.1)
+    - Logging (~> 1.4.0)
     - PromiseKit (~> 6.8.0)
+  - HekaSwiftUI (0.0.2):
+    - HekaCore (~> 0.0.8)
+  - Logging (1.4.0)
   - PromiseKit (6.8.5):
     - PromiseKit/CorePromise (= 6.8.5)
     - PromiseKit/Foundation (= 6.8.5)
@@ -14,19 +18,23 @@ PODS:
     - PromiseKit/CorePromise
 
 DEPENDENCIES:
-  - heka (~> 0.0.5)
+  - HekaSwiftUI (~> 0.0.2)
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - heka
+    - HekaCore
+    - HekaSwiftUI
+    - Logging
     - PromiseKit
 
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
-  heka: c7c93089bc8c96a3374871c5f6328645cb679d74
+  HekaCore: 1e09513d855b6e6dd6ab31aa807ced62501ab644
+  HekaSwiftUI: abfdb51cc6e35cdc2cd79374b41a50c6ab78835c
+  Logging: beeb016c9c80cf77042d62e83495816847ef108b
   PromiseKit: 9616b0afef31eae56ab9ce044c8ec2b8612a15cd
 
-PODFILE CHECKSUM: 0f044e41d1ea4d7f9233955c6df3c872f476e58a
+PODFILE CHECKSUM: 58280186277b0cabeef1e596b7c057bf147cf3c0
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.0

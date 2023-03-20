@@ -12,7 +12,6 @@
 		B6D563B1298EC8740001B0D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D563B0298EC8740001B0D5 /* ContentView.swift */; };
 		B6D563B3298EC8750001B0D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D563B2298EC8750001B0D5 /* Assets.xcassets */; };
 		B6D563B6298EC8750001B0D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D563B5298EC8750001B0D5 /* Preview Assets.xcassets */; };
-		C77BC2EF29ACDB8D004627DA /* heka in Frameworks */ = {isa = PBXBuildFile; productRef = C77BC2EE29ACDB8D004627DA /* heka */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +33,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C8E3FC0027B5E58DEA7D05A /* Pods_PlaygroundSwiftUI.framework in Frameworks */,
-				C77BC2EF29ACDB8D004627DA /* heka in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +114,6 @@
 			);
 			name = PlaygroundSwiftUI;
 			packageProductDependencies = (
-				C77BC2EE29ACDB8D004627DA /* heka */,
 			);
 			productName = PlaygroundSwiftUI;
 			productReference = B6D563AB298EC8740001B0D5 /* PlaygroundSwiftUI.app */;
@@ -147,7 +144,6 @@
 			);
 			mainGroup = B6D563A2298EC8740001B0D5;
 			packageReferences = (
-				C77BC2ED29ACDB8D004627DA /* XCRemoteSwiftPackageReference "heka-swift-package" */,
 			);
 			productRefGroup = B6D563AC298EC8740001B0D5 /* Products */;
 			projectDirPath = "";
@@ -437,25 +433,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C77BC2ED29ACDB8D004627DA /* XCRemoteSwiftPackageReference "heka-swift-package" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/HekaHealth/heka-swift-package.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C77BC2EE29ACDB8D004627DA /* heka */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C77BC2ED29ACDB8D004627DA /* XCRemoteSwiftPackageReference "heka-swift-package" */;
-			productName = heka;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B6D563A3298EC8740001B0D5 /* Project object */;
 }

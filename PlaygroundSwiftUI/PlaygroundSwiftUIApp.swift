@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import heka
+import HekaCore
 
 @main
 struct PlaygroundSwiftUIApp: App {

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import heka
+import HekaSwiftUI
 
 struct ContentView: View {
     var body: some View {
